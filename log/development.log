@@ -7,3 +7,38 @@ Migrating to CreateJobs (20131104192128)
   [1m[35mSQL (1.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20131104192128"]]
   [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-04 14:39:20 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/railties-4.0.0/lib/rails/templates/rails/welcome/index.html.erb (3.1ms)
+Completed 200 OK in 44ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jobs" for 127.0.0.1 at 2013-11-04 14:39:23 -0500
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered jobs/index.html.erb within layouts/application (32.4ms)
+Completed 200 OK in 113ms (Views: 109.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2013-11-04 14:39:23 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-04 14:39:23 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-04 14:39:23 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-04 14:39:23 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-04 14:39:23 -0500
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2013-11-04 14:39:23 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-04 14:39:23 -0500
